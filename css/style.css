@@ -41,7 +41,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(56, 165, 238, 0.5);
+    background-color: rgb(56, 165, 238, 0.1);
 }
 
 .container{
@@ -502,3 +502,6 @@ main {
 main footer {
   margin-top: auto;
 }
+
+
+

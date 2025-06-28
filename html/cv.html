@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Zhangbin Cai</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhangbin Cai - Curriculum Vitae</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+  <div class="cv-container">
+    
     <header>
         <div class="container">
             <input type="checkbox" name="" id="check">
@@ -23,14 +21,14 @@
                 <div class="nav-links">
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="#">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li class="nav-link" style="--i: .85s">
                             <a href="#">Menu<i class="fas fa-caret-down"></i></a>
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="html/cv.html">CV</a>
+                                        <a href="cv.html">CV</a>
                                     </li>
                                     <li class="dropdown-link">
                                         <a href="#">Link 2</a>
@@ -132,32 +130,98 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </header>
+        
+    <section id="Zhangbin"></section></section>
+        <h1>Zhangbin Cai</h1>
+      <p>PhD Candidate, Animal Science<br>
+      McGill University, Montreal, QC<br>
+      <a href="mailto:you@domain.com">you@domain.com</a> • 
+      <a href="https://github.com/caizhangbin" target="_blank">GitHub/caizhangbin</a>
+      </p>
+    </section>
 
-            
-            </div>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>PhD in Animal Science</strong> (In Progress, expected Dec 2025)<br>
+          McGill University, Montreal, QC<br>
+          Research: Bovine mammary gland microbiome and probiotic alternatives for mastitis
+        </li>
+        <li>
+          <strong>BSc in Animal Science</strong>, Oct 2024<br>
+          Dalhousie University, Halifax, NS
+        </li>
+      </ul>
+    </section>
 
-            <div class="menu-container">
-                <div class="menu">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="intro">
-            <div class="overlay"></div>
-            <div class="content">
-                <h1>About Me</h1>
-                <p>Hello! I’m Zhangbin Cai, a PhD candidate specializing in animal microbiome, bioinformatics and bacterial genomics. I do bacteria genome analysis and explore microbial interactions.</p>
-            </div>
-        </section>
-        <footer>
-            <div class="overlay"></div>
-            <div class="content container">
-                <p>© 2023 Zhangbin Cai. All rights reserved.</p>
-            </div>
-        </footer>
-    </main>
+    <section id="research-experience">
+      <h2>Research Experience</h2>
+      <ul>
+        <li>
+          <strong>Bacterial Whole Genome Sequencing & Comparative Genomics Pipeline</strong><br>
+          Developed Snakemake-based workflow for QC, assembly (SPAdes), annotation (Prokka), pangenome analysis (Roary, Panaroo), and Pan-GWAS (Pyseer).
+        </li>
+        <li>
+          <strong>Antimicrobial Resistance & Plasmid Analysis</strong><br>
+          Used Abricate, PlasmidFinder, MOB-suite to identify and characterize ARGs and plasmid replicons in clinical isolates.
+        </li>
+        <li>
+          <strong>Bacterial Co-culture Assays & Statistical Analysis</strong><br>
+          Designed and analyzed competition experiments (CFU counts, AUC, fold-change) in Staphylococcus aureus using R (tidyverse, pheatmap).
+        </li>
+      </ul>
+    </section>
+
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, R, Bash, Java, JavaScript, PHP, SQL, C++</li>
+        <li><strong>Bioinformatics:</strong> Snakemake, Prokka, Roary, Panaroo, Pyseer, Unicycler, GATK, BWA, Samtools, Abricate</li>
+        <li><strong>Data Analysis:</strong> R (tidyverse, ggplot2), Python (pandas, matplotlib, scikit-learn)</li>
+        <li><strong>High-performance Computing:</strong> Compute Canada, HPC cluster job scheduling (SLURM), Linux scripting</li>
+        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React; Git, GitHub Pages, Jekyll</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li>
+          <strong>c19pvs Vaccine Booking Website</strong><br>
+          Full-stack (HTML, PHP, SQL, JavaScript) platform for COVID-19 vaccine appointment scheduling. <a href="https://github.com/caizhangbin/c19pvs" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <strong>GroceryApp</strong><br>
+          JavaScript & PHP web application for online grocery management. <a href="https://github.com/caizhangbin/groceryApp" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <strong>Battleship & LadderAndSnake Games</strong><br>
+          Java-based implementations of classic board games. <a href="https://github.com/caizhangbin/BattleShip" target="_blank">BattleShip</a> • <a href="https://github.com/caizhangbin/LadderAndSnakeGame" target="_blank">LadderAndSnakeGame</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="supervisory">
+      <h2>Leadership & Mentorship</h2>
+      <ul>
+        <li>Supervised undergraduate theses of three students on bioinformatics analyses.</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications & Manuscripts</h2>
+      <ul>
+        <li>O'Brien, B., Yushchenko, A., Suh, J., Jung, D., Cai, Z., Nguyen, N.S., Semret, M., et al. (2025). Subtle genomic differences in <em>Klebsiella</em> ... (under review)</li>
+        <li>One paper under review, two manuscripts in preparation.</li>
+      </ul>
+    </section>
+
+    <footer class="cv-footer">
+      <p>© 2025 Zhangbin Cai. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
-
 </html>
