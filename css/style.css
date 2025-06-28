@@ -219,49 +219,83 @@ section{
     pointer-events: auto;
 }
 
-.hamburger-menu-container{
-    flex: 1;
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
+section .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
-.hamburger-menu{
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+/* 4. Prepare heading and paragraph for animation */
+section .content h1,
+section .content p {
+  opacity: 0;
+  transform: translateY(20px);
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section .content h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease forwards;
+}
+section .content p {
+  font-size: 1.2rem;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease forwards;
 }
 
-.hamburger-menu div{
-    width: 1.6rem;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #fff;
-    position: relative;
-    z-index: 1001;
-    transition: .5s;
+/* Target only your About-Me section */
+.intro {
+  position: relative;
+  height: 100vh;            /* full screen */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: flex-start;  /* start from top, not true center */
+  padding-top: 30vh;        /* push content down 30% of viewport height */
+  overflow: hidden;
 }
 
-.hamburger-menu div:before,
-.hamburger-menu div:after{
-    content: '';
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    background-color: #fff;
-    border-radius: 3px;
-    transition: .5s;
+.intro .overlay {
+  /* keep whatever styles you had */
 }
 
-.hamburger-menu div:before{
-    transform: translateY(-7px);
+.intro .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
-.hamburger-menu div:after{
-    transform: translateY(7px);
+/* Animations unchanged, but scope them to .intro */
+.intro .content h1,
+.intro .content p {
+  opacity: 0;
+  transform: translateY(20px);
 }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro .content h1 {
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.intro .content p {
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.0s;
+}
+
 
 #check{
     position: absolute;
@@ -276,17 +310,7 @@ section{
     display: none;
 }
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div{
-    background-color: transparent;
-}
 
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
-    transform: translateY(0) rotate(-45deg);
-}
-
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
-    transform: translateY(0) rotate(45deg);
-}
 
 @keyframes animation{
     from{
