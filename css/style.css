@@ -575,7 +575,7 @@ body.cv-page::before {
 
 /* Ensure the cv-container stays legible */
 body.cv-page .cv-container {
-  background: rgba(255,255,255,0.9); /* white card with slight opacity */
+  background: rgba(255,255,255,0.8); /* white card with slight opacity */
   border-radius: 8px;
   padding: 2rem;
 }
