@@ -437,37 +437,48 @@ section{
 
     
 }
-
 /* Target only your About-Me section */
 .intro {
-  position: relative;
-  height: 100vh;            /* full screen */
-  display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: flex-start;  /* start from top, not true center */
-  padding-top: 30vh;        /* push content down 30% of viewport height */
-  overflow: hidden;
+    position: relative;
+    height: 100vh;            /* full screen */
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: flex-start;  /* start from top, not true center */
+    padding-top: 30vh;        /* push content down 30% of viewport height */
+    overflow: hidden;
 }
-
 
 .intro .content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 600px;  /* limit content width */
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Animations unchanged, but scope them to .intro */
 .intro .content h1,
 .intro .content p {
-  opacity: 0;
-  transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.intro .content h1 {
+    font-size: 3rem;          /* bigger heading */
+    line-height: 1;           /* single-line height */
+}
+
+.intro .content p {
+    font-size: 1.4rem;        /* slightly larger paragraph */
+    line-height: 2;         /* tighter line spacing */
+    margin-top: 1rem;
 }
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .intro .content h1 {
@@ -477,5 +488,5 @@ section{
 
 .intro .content p {
   animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 1.0s;
+  animation-delay: 0.6s;
 }
