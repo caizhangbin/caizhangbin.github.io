@@ -9,7 +9,19 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    overflow-y: auto;
 }
+/* Hero intro background (only on pages with <body class="home">) */
+body.home .intro {
+  position: relative;
+  min-height: calc(100vh - 3rem);               /* full screen minus header */
+  background: url('../pic/bg.png')               /* path to your image */
+              no-repeat                          /* don’t tile it */
+              center center                       /* center it horizontally & vertically */
+              / cover;                            /* scale it to cover the area */
+  overflow: hidden;                              /* keep the overlay clipped */
+}
+
 
 ul{
     list-style: none;
@@ -27,13 +39,7 @@ header{
     z-index: 1000;
 }
 
-section{
-    position: relative;
-    height: calc(100vh - 3rem);
-    width: 100%;
-    background: url('../pic/bg.png') no-repeat top center / cover;
-    overflow: hidden;
-}
+
 
 .overlay{
     position: absolute;
@@ -440,13 +446,17 @@ section{
 /* Target only your About-Me section */
 .intro {
     position: relative;
-    height: 100vh;            /* full screen */
+    height: calc(100vh - 3rem);
+    width: 100%;
     display: flex;
     justify-content: center;  /* horizontal center */
     align-items: flex-start;  /* start from top, not true center */
     padding-top: 30vh;        /* push content down 30% of viewport height */
+    
     overflow: hidden;
 }
+
+
 
 .intro .content {
     position: relative;
@@ -492,16 +502,87 @@ section{
 }
 
 
-main {
+/* ===== CV page styling ===== */
+.cv-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.cv-container section {
+  background: none;
+  height: auto;
+  overflow: visible;
+  padding: 2rem 0;
+}
+
+.cv-container .cv-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cv-container .cv-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-container h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #60b4df;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.cv-container ul {
+  list-style: disc inside;
+}
+
+.cv-container li {
+  margin-bottom: 0.8rem;
+}
+
+/* Make sure footer sits at bottom */
+body {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 3rem); /* subtract your header height */
+  min-height: 100vh;
+}
+main.cv-container {
+  flex: 1;
 }
 
-/* Push the footer down inside main */
-main footer {
-  margin-top: auto;
+/* ==== CV Page Background ==== */
+
+body.cv-page {
+  /* full‐screen background */
+  background: url('../pic/bg.png') no-repeat center center / cover;
+  /* if you want a semi‐transparent tint layer: */
+  position: relative;
 }
 
+/* Overlay tint, if desired */
+body.cv-page::before {
+  content: "";
+  position: fixed;       /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56,165,238,0.2);
+  pointer-events: none;
+  z-index: -1;           /* behind all content */
+}
 
+/* Ensure the cv-container stays legible */
+body.cv-page .cv-container {
+  background: rgba(255,255,255,0.9); /* white card with slight opacity */
+  border-radius: 8px;
+  padding: 2rem;
+}
 
+footer {
+  background-color: #60b4df;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

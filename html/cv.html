@@ -3,145 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zhangbin Cai - Curriculum Vitae</title>
+  <title>Zhangbin Cai – CV</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <div class="cv-container">
-    
-    <header>
-        <div class="container">
-            <input type="checkbox" name="" id="check">
-            
-            <div class="logo-container">
-                <h3 class="logo">Zhangbin Cai</h3>
-            </div>
+<body class="cv-page">
+  <!-- site header/nav (identical to index.html) -->
+  <header>
+    <div class="container">
+      <input type="checkbox" id="check">
+      <div class="logo-container">
+        <h3 class="logo">Zhangbin Cai</h3>
+      </div>
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i:.6s">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="nav-link" style="--i:.85s">
+              <a href="#">Menu <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link"><a href="cv.html">CV</a></li>
+                  <li class="dropdown-link"><a href="#">Link 2</a></li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 3 <i class="fas fa-caret-down"></i></a>
+                    <!-- nested dropdown… -->
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-link" style="--i:1.1s">
+              <a href="#">Blog <i class="fas fa-caret-down"></i></a>
+              <!-- blog dropdown if needed -->
+            </li>
+            <li class="nav-link" style="--i:1.35s">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-container">
+        <div class="menu"><div></div></div>
+      </div>
+    </div>
+  </header>
 
-            <div class="nav-btn">
-                <div class="nav-links">
-                    <ul>
-                        <li class="nav-link" style="--i: .6s">
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-link" style="--i: .85s">
-                            <a href="#">Menu<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="cv.html">CV</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 2</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 1</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 2</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 3</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">More<i class="fas fa-caret-down"></i></a>
-                                                    <div class="dropdown second">
-                                                        <ul>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 1</a>
-                                                            </li>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 2</a>
-                                                            </li>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 3</a>
-                                                            </li>
-                                                            <div class="arrow"></div>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <div class="arrow"></div>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 4</a>
-                                    </li>
-                                    <div class="arrow"></div>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Blog<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 1</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 2</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 1</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 2</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Link 3</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">More<i class="fas fa-caret-down"></i></a>
-                                                    <div class="dropdown second">
-                                                        <ul>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 1</a>
-                                                            </li>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 2</a>
-                                                            </li>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Link 3</a>
-                                                            </li>
-                                                            <div class="arrow"></div>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <div class="arrow"></div>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 4</a>
-                                    </li>
-                                    <div class="arrow"></div>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        
-    <section id="Zhangbin"></section></section>
-        <h1>Zhangbin Cai</h1>
-      <p>PhD Candidate, Animal Science<br>
-      McGill University, Montreal, QC<br>
-      <a href="mailto:you@domain.com">you@domain.com</a> • 
-      <a href="https://github.com/caizhangbin" target="_blank">GitHub/caizhangbin</a>
+  <!-- main CV content -->
+  <main class="cv-container">
+    <!-- Bio header -->
+    <section class="cv-header">
+      <h1>Zhangbin Cai</h1>
+      <p>
+        PhD Candidate, Animal Science<br>
+        McGill University, Montreal, QC<br>
+        <a href="mailto:caizhangbin@gmail.com">caizhangbin@gmail.com</a> •
+        <a href="https://github.com/caizhangbin" target="_blank">GitHub/caizhangbin</a>
+        <a href="https://www.linkedin.com/in/zhangbin-c-6583a7a7/" target="_blank">LinkedIn/zhangbin-c</a>
       </p>
     </section>
 
+    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <ul>
@@ -157,71 +79,87 @@
       </ul>
     </section>
 
+    <!-- Research Experience -->
     <section id="research-experience">
       <h2>Research Experience</h2>
       <ul>
         <li>
-          <strong>Bacterial Whole Genome Sequencing & Comparative Genomics Pipeline</strong><br>
-          Developed Snakemake-based workflow for QC, assembly (SPAdes), annotation (Prokka), pangenome analysis (Roary, Panaroo), and Pan-GWAS (Pyseer).
+          <strong>Bacterial WGS & Comparative Genomics Pipeline</strong><br>
+          Developed a Snakemake workflow for QC, assembly (SPAdes), annotation (Prokka),
+          pangenome analysis (Roary, Panaroo), and Pan-GWAS (Pyseer).
         </li>
         <li>
           <strong>Antimicrobial Resistance & Plasmid Analysis</strong><br>
-          Used Abricate, PlasmidFinder, MOB-suite to identify and characterize ARGs and plasmid replicons in clinical isolates.
+          Used Abricate, PlasmidFinder, MOB-suite to identify and characterize ARGs and plasmid replicons.
         </li>
         <li>
           <strong>Bacterial Co-culture Assays & Statistical Analysis</strong><br>
-          Designed and analyzed competition experiments (CFU counts, AUC, fold-change) in Staphylococcus aureus using R (tidyverse, pheatmap).
+          Designed competition experiments (CFU counts, AUC, fold-change) in Staphylococcus aureus using R.
         </li>
       </ul>
     </section>
 
+    <!-- Technical Skills -->
     <section id="technical-skills">
       <h2>Technical Skills</h2>
       <ul>
         <li><strong>Languages:</strong> Python, R, Bash, Java, JavaScript, PHP, SQL, C++</li>
-        <li><strong>Bioinformatics:</strong> Snakemake, Prokka, Roary, Panaroo, Pyseer, Unicycler, GATK, BWA, Samtools, Abricate</li>
+        <li><strong>Bioinformatics:</strong> Snakemake, Prokka, Roary, Panaroo, Pyseer, Unicycler, GATK, BWA, Samtools</li>
         <li><strong>Data Analysis:</strong> R (tidyverse, ggplot2), Python (pandas, matplotlib, scikit-learn)</li>
-        <li><strong>High-performance Computing:</strong> Compute Canada, HPC cluster job scheduling (SLURM), Linux scripting</li>
-        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React; Git, GitHub Pages, Jekyll</li>
+        <li><strong>HPC:</strong> Compute Canada (SLURM), Linux scripting</li>
+        <li><strong>Web Dev:</strong> HTML, CSS, JavaScript, React, GitHub Pages, Jekyll</li>
       </ul>
     </section>
 
+    <!-- Selected Projects -->
     <section id="projects">
       <h2>Selected Projects</h2>
       <ul>
         <li>
           <strong>c19pvs Vaccine Booking Website</strong><br>
-          Full-stack (HTML, PHP, SQL, JavaScript) platform for COVID-19 vaccine appointment scheduling. <a href="https://github.com/caizhangbin/c19pvs" target="_blank">GitHub</a>
+          Full-stack (HTML, PHP, SQL, JS) platform for COVID-19 appointment scheduling. 
+          <a href="https://github.com/caizhangbin/c19pvs" target="_blank">GitHub</a>
         </li>
         <li>
           <strong>GroceryApp</strong><br>
-          JavaScript & PHP web application for online grocery management. <a href="https://github.com/caizhangbin/groceryApp" target="_blank">GitHub</a>
+          JS & PHP web application for online grocery management. 
+          <a href="https://github.com/caizhangbin/groceryApp" target="_blank">GitHub</a>
         </li>
         <li>
-          <strong>Battleship & LadderAndSnake Games</strong><br>
-          Java-based implementations of classic board games. <a href="https://github.com/caizhangbin/BattleShip" target="_blank">BattleShip</a> • <a href="https://github.com/caizhangbin/LadderAndSnakeGame" target="_blank">LadderAndSnakeGame</a>
+          <strong>Battleship & Snake-Ladder Games</strong><br>
+          Java implementations of classic board games. 
+          <a href="https://github.com/caizhangbin/BattleShip" target="_blank">BattleShip</a>,
+          <a href="https://github.com/caizhangbin/LadderAndSnakeGame" target="_blank">LadderAndSnakeGame</a>
         </li>
       </ul>
     </section>
 
-    <section id="supervisory">
+    <!-- Leadership -->
+    <section id="mentorship">
       <h2>Leadership & Mentorship</h2>
       <ul>
-        <li>Supervised undergraduate theses of three students on bioinformatics analyses.</li>
+        <li>Supervised three undergraduate theses on bioinformatics analyses.</li>
       </ul>
     </section>
 
+    <!-- Publications -->
     <section id="publications">
       <h2>Publications & Manuscripts</h2>
       <ul>
-        <li>O'Brien, B., Yushchenko, A., Suh, J., Jung, D., Cai, Z., Nguyen, N.S., Semret, M., et al. (2025). Subtle genomic differences in <em>Klebsiella</em> ... (under review)</li>
+        <li>
+          O'Brien, B., Yushchenko, A., Suh, J., … Cai, Z., et al. (2025).
+          Subtle genomic differences in <em>Klebsiella</em> … (under review)
+        </li>
         <li>One paper under review, two manuscripts in preparation.</li>
       </ul>
     </section>
+  </main>
 
-    <footer class="cv-footer">
+  <!-- footer -->
+  <footer class="cv-footer">
+    <div class="container">
       <p>© 2025 Zhangbin Cai. All rights reserved.</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
