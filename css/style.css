@@ -555,7 +555,7 @@ main.cv-container {
 
 body.cv-page {
   /* full‐screen background */
-  background: url('../pic/bg.png') no-repeat center center / cover;
+  background: url('../pic/mcgill.png') no-repeat center center / cover;
   /* if you want a semi‐transparent tint layer: */
   position: relative;
 }
