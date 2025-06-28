@@ -262,9 +262,7 @@ section .content p {
   overflow: hidden;
 }
 
-.intro .overlay {
-  /* keep whatever styles you had */
-}
+/* Removed empty .intro .overlay ruleset */
 
 .intro .content {
   position: relative;
