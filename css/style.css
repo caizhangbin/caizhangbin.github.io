@@ -762,4 +762,58 @@ body.contact-page .contact-form button {
   transition: background 0.3s;
 }
 
+/* ==== Projects Page Styles ==== */
+body.projects-page {
+  /* full‐screen background */
+  background: url('../pic/duck.png') no-repeat center center / cover;
+  /* if you want a semi‐transparent tint layer: */
+  position: relative;
+}
 
+
+
+/* Main container padding */
+main.projects-container {
+  flex: 1;
+  padding: 4rem 2rem;
+}
+
+/* Responsive grid of project cards */
+.projects-container .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Each project card */
+.project-item {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Project title */
+.project-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+/* Project description */
+.project-item p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* GitHub link */
+.project-item a {
+  font-weight: 500;
+  color: #0d77ac;
+  text-decoration: none;
+}
+.project-item a:hover {
+  text-decoration: underline;
+}
